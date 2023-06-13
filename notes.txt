@@ -1,6 +1,6 @@
 revenue
 
-10 items per section
+10? items per section
 revenue is from the column in the spiced sheet
 profit we can make up its easy
 
@@ -16,7 +16,19 @@ import a dataframe of items, costs, and retail price (fancy later step)
 infinite supply so no restock stuff
 profit margin is 30%, so revenue x 1.3
 
+we will use a dictionary for each aisle re: prices
+
+bonuses
+time of day + time of day most profit is made
+
+
 customer
 
 +1 item for every location shift unique or not except checkout
 item is random from supermarket list
+
+
+
+deals with calcuation of checkout
+
+average of profit per customer? bonus stretch goal
