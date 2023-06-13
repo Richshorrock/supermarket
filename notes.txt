@@ -1,0 +1,10 @@
+revenue
+
+10 items per section
+revenue is from the column in the spiced sheet
+profit we can make up its easy
+
+so +1 item from location for every new location, and every minute increases a chance of a second item?
+
+time of day is possible extra variable
+maybe also when most profit is actually made? might be a little
