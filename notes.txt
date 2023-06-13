@@ -35,3 +35,6 @@ checkout
 we calculate sum of each price for each aisle, we are expecting 4 different totals per day, from this we can figure out the total profit from each section per day.
 
 average of profit per customer? bonus stretch goal
+
+
+style_setting: snakecase 
