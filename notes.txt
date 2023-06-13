@@ -9,12 +9,14 @@ so +1 item from location for every new location, and every minute increases a ch
 time of day is possible extra variable
 maybe also when most profit is actually made? might be a little
 
-Create cost and retail (revenue and profits) as well as 3 fake items per aisle
 
-For every customer, first aisle is +1 of an item from the list randomly ,for every first aisle visit
-(So +1 to drinks and fruits if their order is drink-fruit-checkout)
+supermarket 
 
-Add a weight for extra minutes spent for 0.2 chance of additional purchase per extra minute
+import a dataframe of items, costs, and retail price (fancy later step)
+infinite supply so no restock stuff
+profit margin is 30%, so revenue x 1.3
 
-Possibility for stocking and employee forecasting
+customer
 
++1 item for every location shift unique or not except checkout
+item is random from supermarket list
