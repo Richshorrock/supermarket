@@ -10,7 +10,7 @@ time of day is possible extra variable
 maybe also when most profit is actually made? might be a little
 
 
-supermarket 
+SUPERMARKET 
 
 import a dataframe of items, costs, and retail price (fancy later step)
 infinite supply so no restock stuff
@@ -18,17 +18,20 @@ profit margin is 30%, so revenue x 1.3
 
 we will use a dictionary for each aisle re: prices
 
+deals with calcuation of checkout
+
+
 bonuses
 time of day + time of day most profit is made
 
 
-customer
+CUSTOMER
 
 +1 item for every location shift unique or not except checkout
 item is random from supermarket list
 
+markov chain
 
 
-deals with calcuation of checkout
 
 average of profit per customer? bonus stretch goal
