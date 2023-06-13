@@ -8,3 +8,13 @@ so +1 item from location for every new location, and every minute increases a ch
 
 time of day is possible extra variable
 maybe also when most profit is actually made? might be a little
+
+Create cost and retail (revenue and profits) as well as 3 fake items per aisle
+
+For every customer, first aisle is +1 of an item from the list randomly ,for every first aisle visit
+(So +1 to drinks and fruits if their order is drink-fruit-checkout)
+
+Add a weight for extra minutes spent for 0.2 chance of additional purchase per extra minute
+
+Possibility for stocking and employee forecasting
+
