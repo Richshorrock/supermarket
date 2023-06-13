@@ -10,13 +10,17 @@ time of day is possible extra variable
 maybe also when most profit is actually made? might be a little
 
 
+todos
+  we need to create a checkout time for any customers who didn't checkout before store closing
+
 supermarket
 
-import a dataframe of items, costs, and retail price (fancy later step)
-infinite supply so no restock stuff
-profit margin is 30%, so revenue x 1.3
+Product Dictionaries,
+dairy_products = {"dairy_retail_price": [2, 3, 5]}
+spice_products = {"spice_retail_price": [1, 2, 3]}
+fruit_products = {"fruit_retail_price": [1, 3, 6]}
+drink_products = {"drink_retail_price": [2, 5, 10]}
 
-we will use a dictionary for each aisle re: prices - we keep the retail price in here
 
 bonuses
 time of day + time of day most profit is made
@@ -25,9 +29,11 @@ time of day + time of day most profit is made
 customer
 
 MC based in customer
-+1 item for every location shift unique or not except checkout
-item is random from supermarket list
-and we record the price of each item and which aisle it came from
+
+###Function
+adding_product_location_shift
+  When customer changes location (except for checkout) add a new row to a dataframe
+  containing dictionary key and a randomly selected value from according product dictionary.
 
 
 checkout
@@ -37,4 +43,4 @@ we calculate sum of each price for each aisle, we are expecting 4 different tota
 average of profit per customer? bonus stretch goal
 
 
-style_setting: snakecase 
+style_setting: snakecase
