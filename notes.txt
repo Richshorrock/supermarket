@@ -19,6 +19,8 @@ Checkout
 ###Function
     checkout_calculation looks at the data-frame customer_baskets and groupby and sums each section, dairy, spice, fruit, drink.
 
+Revenue will be both individual and as a sum
+
 ###Function
     BONUS: use timestamps to figure which section was most profitable in AM + PM
 
