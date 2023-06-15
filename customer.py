@@ -3,7 +3,7 @@ import numpy as np
     
 class Customer:
     
-    asiles = ['dairy', 'spices', 'fruit', 'drinks', 'checkout']
+    
 
     stock = {
         "dairy_retail_price": [2, 3, 5],
@@ -12,32 +12,37 @@ class Customer:
         "drink_retail_price": [2, 5, 10]
 }
     
-    def __init__(self, customer_id, location, basket):
+    def __init__(self, customer_id, location = 'entry',):
         self.customer_id = customer_id
-        self.location = None
+        self.location = location
         self.basket = []
+        self.aisles = self.TM.columns #['dairy', 'spices', 'fruit', 'drinks', 'checkout']
 
     def move(self):
-        self.location = np.random.choice(self.asiles)
-        self.fill_basket()
+        if self.location == 'checkout':
+            return None
+        elif self.location == 'entry':
+            self.location = 'checkout'
+        self.location = np.random.choice(self.aisles, p=self.TM.loc[self.location])
+        if self.location == 'checkout':
+            pass
+        else:
+            self.fill_basket()
         
     def fill_basket(self):
     
         if self.location == 'dairy':
             item = np.random.choice(self.stock["dairy_retail_price"])
-            self.basket.append(item)
-            
+              
         elif self.location == 'spice':
             item = np.random.choice(self.stock["spice_retail_price"])
-            self.basket.append(item)
-        
+            
         elif self.location == 'fruit':
             item = np.random.choice(self.stock["fruit_retail_price"])
-            self.basket.append(item)
-        
-        elif self.location == 'drinks':
+            
+        else:
             item = np.random.choice(self.stock["drink_retail_price"])
-            self.basket.append(item)
+        self.basket.append(item)
         
 
 customer = Customer(1, 'dairy', [])
