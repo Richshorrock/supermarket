@@ -1,25 +1,41 @@
 import pandas as pd
+import numpy as np
 
-### importing customer no's from data
+asiles = ['dairy', 'spices', 'fruit', 'drinks', 'checkout']
 
-df=pd.read_csv=('data/monday.csv')
-
-def get_customer_id(customer_id):
-    customer_row = df[df['customer_no'] == customer_id]
-  
-
+stock = {
+    "dairy_retail_price": [2, 3, 5],
+    "spice_retail_price": [1, 2, 3],
+    "fruit_retail_price": [1, 3, 6],
+    "drink_retail_price": [2, 5, 10]
+}
+    
 class Customer:
     
-    def __init__(self, customer_id, basket):
+    def __init__(self, customer_id, location, basket):
         self.customer_id = customer_id
-        self.supermarket = supermarket
-        self.name = get_customer_id(customer_id)
         self.location = None
         self.basket = []
 
-    #def move(self):
-        #self.location += 0.1
+    def move(self, location):
+        self.location = np.random.choice(self.asiles).self??????
         
-customer1 = Customer()
-
-print(customer1.customer_id)
+    def fill_basket(self, item)
+        self.location == 'dairy'
+        item = np.choice(stock["dairy_ retail_price"])
+        self.basket.append(item)
+        
+        self.location == 'spice'
+        item = np.choice(stock["spice retail_price"])
+        self.basket.append(item)
+        
+        self.location == 'fruit'
+        item = np.choice(stock["fruit retail_price"])
+        self.basket.append(item)
+        
+        self.location == 'drinks'
+        item = np.choice(stock["drink_retail_price"])
+        self.basket.append(item)
+        
+        
+        

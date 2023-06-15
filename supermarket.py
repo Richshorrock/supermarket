@@ -1,6 +1,6 @@
 class Supermarket:
     
-    locations = ['dairy', 'spices', 'fruit', 'drinks', 'checkout']
+    
     
     
 #product_dictionaries
