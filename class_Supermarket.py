@@ -22,4 +22,9 @@ class Supermarket:
         
         for customer in self.customer_list:
             self.revenue += sum(customer.basket)
-    
+            
+if __name__ == '__main__':
+    supermarket = Supermarket()
+    supermarket.start_supermarket()
+    print(supermarket.revenue)
+        
