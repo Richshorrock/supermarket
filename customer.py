@@ -8,6 +8,7 @@ class Customer:
         self.customer_id = customer_id
         self.location = location
         self.basket = []
+        self.TM = pd.read_csv('supermarket_transition_matrix.csv', index_col=0)
         self.aisles = self.TM.columns #['dairy', 'spices', 'fruit', 'drinks', 'checkout']
         self.stock = {
         "dairy_retail_price": [2, 3, 5],
