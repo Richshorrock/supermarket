@@ -4,7 +4,7 @@ import numpy as np
     
 class Customer:
 
-    def __init__(self, customer_id, location = 'entry',):
+    def __init__(self, customer_id, location = 'entry'):
         self.customer_id = customer_id
         self.location = location
         self.basket = []
