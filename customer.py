@@ -2,22 +2,19 @@ import pandas as pd
 import numpy as np
     
 class Customer:
-    
-    
 
-    stock = {
-        "dairy_retail_price": [2, 3, 5],
-        "spice_retail_price": [1, 2, 3],
-        "fruit_retail_price": [1, 3, 6],
-        "drink_retail_price": [2, 5, 10]
-}
-    
     def __init__(self, customer_id, location = 'entry',):
         self.customer_id = customer_id
         self.location = location
         self.basket = []
         self.aisles = self.TM.columns #['dairy', 'spices', 'fruit', 'drinks', 'checkout']
-
+        self.stock = {
+        "dairy_retail_price": [2, 3, 5],
+        "spice_retail_price": [1, 2, 3],
+        "fruit_retail_price": [1, 3, 6],
+        "drink_retail_price": [2, 5, 10]
+}
+        
     def move(self):
         if self.location == 'checkout':
             return None
