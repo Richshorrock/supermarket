@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from class_Supermarket import Supermarket
+
     
 class Customer:
 
