@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from class_Supermarket import Supermarket
     
 class Customer:
 
@@ -42,8 +43,5 @@ class Customer:
         self.basket.append(item)
         
 
-customer = Customer(1, 'dairy', [])
-customer.move()
-print(customer.basket)
-print(customer.location)
+
         
