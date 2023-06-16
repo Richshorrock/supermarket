@@ -1,7 +1,7 @@
 import random
 import numpy as np
 
-
+from customer import Customer
 
 
 class Supermarket:
